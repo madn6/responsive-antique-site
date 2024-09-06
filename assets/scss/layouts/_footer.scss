@@ -1,0 +1,31 @@
+@use "../partials/" as p;
+
+footer{
+   padding-bottom: 2rem;
+   .footer__content{
+      display: flex;
+      align-items:start;
+      justify-content: space-between;
+      h4{
+         margin-bottom: 1rem;
+         color: p.$deepBlue;
+      }
+      p,li{
+         color: p.$grey;
+         font-size: 14px;
+         font-weight: 500;
+         margin-bottom: 0.5rem;
+         cursor: pointer;
+         transition: all 0.4s ease;
+         &:hover{
+            color: p.$black;
+            text-decoration: underline;
+         }
+      }
+      span{
+         margin-top: 2rem;
+         color: p.$lightBlue;
+         cursor: pointer;
+      }
+   }
+}

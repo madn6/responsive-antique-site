@@ -1,0 +1,29 @@
+@use "../partials/" as p;
+
+main {
+	.feedback {
+		.feedback__content {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         .girl__statue{
+            img{
+               width:400px;
+            }
+         }
+         .buyer__feedback{
+            width: 600px;
+            h3{
+               font-size:24px;
+               margin-bottom: 0.5rem;
+               color: p.$deepBlue;
+            }
+            p{
+               color: p.$deepGrey;
+               font-weight: 600;
+
+            }
+         }
+		}
+	}
+}

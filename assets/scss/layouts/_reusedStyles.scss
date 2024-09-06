@@ -1,0 +1,41 @@
+/* ---------- reused styles --------- */
+
+@use "../partials" as p;
+
+.container {
+	padding-inline: 16px;
+}
+
+.h1 {
+	font-size: p.$fontSize-3;
+	line-height: 1.2;
+}
+
+.h2 {
+	font-size: p.$fontSize-4;
+}
+
+.h3 {
+	font-size: p.$fontSize-5;
+}
+
+
+.section {
+	padding-block-end: p.$section-spacing;
+}
+p{
+	text-transform: lowercase;
+}
+
+.btn__primary {
+	background-color: p.$orange;
+	color: p.$white;
+	padding: 0.5rem;
+	border-radius: p.$radius-10;
+	padding-inline: 12px;
+
+	&:hover {
+		color: p.$dark;
+		transition: color 0.4s ease;
+	}
+}

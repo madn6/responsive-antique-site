@@ -1,0 +1,144 @@
+@use "../partials/" as p;
+
+main {
+	.slider {
+		.slider__top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.slider__top-left {
+				h1 {
+					font-size: 2.4rem;
+					margin-bottom: 0.5rem;
+				}
+				p {
+					color: p.$deepGrey;
+					font-size: 14px;
+				}
+			}
+			.slider__top-right {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				color: p.$white;
+
+				.right__arrow {
+					box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+						rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+					background-color: p.$orange;
+					width: 30px;
+					height: 30px;
+					border-radius: p.$radius-circle;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+				}
+				.left__arrow {
+					width: 30px;
+					cursor: pointer;
+					height: 30px;
+					border-radius: p.$radius-circle;
+					display: flex;
+					align-items: center;
+					color: p.$oceanBlue;
+					justify-content: center;
+					box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+						rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+				}
+			}
+		}
+		.slider__bottom {
+			margin-top: 2rem;
+			.slider__content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.slider__card {
+					cursor: pointer;
+					border-radius: 5px;
+					gap: 1rem;
+					width: 250px;
+					height: 280px;
+					padding: 0.8rem;
+					transition: all 0.3s ease-in-out;
+					// box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+					// 	rgba(0, 0, 0, 0.24) 0px 1px 2px;
+					box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+					&:hover {
+						box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+							rgba(0, 0, 0, 0.23) 0px 6px 6px;
+					}
+					img {
+						width: 100%;
+						display: block;
+						object-fit: cover;
+					}
+					.slider__title {
+						h3 {
+							font-size: 16px;
+							color: p.$dark;
+							font-weight: 500;
+							margin-top: 0.5rem;
+							white-space: nowrap;
+						}
+					}
+
+					.slider__bits {
+						white-space: nowrap;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						h6 {
+							color: p.$dark;
+							font-weight: 400;
+						}
+						p {
+							font-size: 10px;
+							color: p.$grey;
+							font-weight: 500;
+						}
+					}
+
+					.slider__subtitle {
+						display: flex;
+						align-items: center;
+						gap: 10px;
+						h6 {
+							color: p.$grey;
+							font-weight: 400;
+							margin-bottom: 0.5rem;
+						}
+					}
+
+					.slider__price {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						margin-bottom: 1rem;
+						h3 {
+							color: p.$dark;
+						}
+						h5 {
+							border: 1px solid p.$lightBlue;
+							color: p.$lightBlue;
+							box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+								rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+							padding: 3px;
+							border-radius: 8px;
+							cursor: pointer;
+							font-weight: 500;
+							font-size: 10px;
+							transition: all 0.3s ease-in-out;
+							&:hover {
+								background-color: p.$lightBlue;
+								color: p.$white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

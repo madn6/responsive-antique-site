@@ -1,0 +1,49 @@
+@use "../partials/" as p;
+
+main {
+	.search__container {
+		max-width: 800px;
+		margin: 0 auto;
+		.search__content {
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			padding: 1rem;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.search__item {
+				h4 {
+					margin-bottom: 0.5rem;
+					color: p.$deepBlue;
+				}
+				h6 {
+					color: p.$grey;
+               font-weight: p.$weight-medium;
+				}
+			}
+
+			.search__button {
+				display: flex;
+				align-items: center;
+				background-color: p.$deepBlue;
+				padding: 10px 20px;
+				gap: 6px;
+				border-radius: 5px;
+				color: p.$white;
+				i {
+					font-size: 12px;
+					color: p.$white;
+				}
+			}
+			.search__arrow {
+				display: flex;
+				align-items: center;
+				i {
+					margin-left: 0.5rem;
+					font-size: 12px;
+               cursor: pointer;
+				}
+			}
+		}
+	}
+}

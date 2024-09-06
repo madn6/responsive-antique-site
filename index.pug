@@ -1,0 +1,277 @@
+doctype html
+head
+   meta(charset='UTF-8')
+   meta(name='viewport' content='width=device-width, initial-scale=1.0')
+   title Antique landing page
+   // -------- fevicon icon ---------
+   link(rel='icon' href='../favicon.ico?v=2' type='image/x-icon')
+   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' integrity='sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==' crossorigin='anonymous' referrerpolicy='no-referrer')
+   // --------- google font(opt) ---------
+   link(rel='preconnect' href='https://fonts.googleapis.com')
+   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+   link(href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel='stylesheet')
+   // ancient font
+   link(rel='preconnect' href='https://fonts.googleapis.com')
+   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+   link(href='https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap' rel='stylesheet')
+   // --------- style sheet ---------
+   link(rel='stylesheet' href='/assets/scss/style.css')
+   //custom javascript link
+   script(src="../assets/js/script.js" defer) 
+header
+   // ------ header container -------
+   .header__container.container
+      a(href='index.html')
+         img(src='../assets/images/logo.png' alt='logo')
+      // ----------- navbar ------------
+      nav.navbar
+         ul.nav__list
+            li.nav__item
+               a.nav__link(href='#') Home
+            li.nav__item
+               a.nav__link(href='#') Collections
+            li.nav__item
+               a.nav__link(href='#') How We Collect
+            li.nav__item
+               a.nav__link(href='#') Sell An antique
+            li.nav__item
+               a.nav__link(href='#') Blog
+      button.header__btn.btn__primary Our Collections
+      <i class="fa-solid fa-bars open"></i>
+         //sidebar
+      .sidebar
+         <i class="fa-solid fa-xmark close"></i>
+         aside 
+            ul.sidebar__list
+               li.nav__item
+                  a.nav__link(href='#') Home
+               li.nav__item
+                  a.nav__link(href='#') Collections
+               li.nav__item
+                  a.nav__link(href='#') How We Collect
+               li.nav__item
+                  a.nav__link(href='#') Sell An antique
+               li.nav__item
+                  a.nav__link(href='#') Blog
+               button.btn__primary Our Collections
+
+main
+   article
+      // hero section
+      section.hero.section
+         .hero__container.container
+            .hero__content
+               .hero__left
+                  h1.hero__title.h1
+                     | World&rsquo;s Biggest 
+                     span Anitque Collection
+                  p.hero__para
+                     | From they fine john he give of rich he. They age and
+                     | draw mrs like. Improving end distrusts may instantly
+                     | was household applauded incommode.
+                  .hero__buttons
+                     button.hero__button.btn__primary Discover Now
+                     img.hero__paly(width='120' src='../assets/images/Play video.png' alt='video button ')
+               .hero__image
+                  img.hero__jar(src='../assets/images/jar-group.png' alt='jar')
+               .hero__right
+                  .hero__achievements
+                     ul.achievements__list
+                        li
+                           img.png-img(src='../assets/images/girl-icon1.png' alt='girl-icon')
+                           .achievement__data
+                              h3 1332
+                              h6 Year
+                        li
+                           img.png-img(src='../assets/images/cup1.png' alt='cup-icon')
+                           .achievement__data
+                              h3 29
+                              h6 Bids so far
+                        li
+                           img.png-img(src='../assets/images/building1.png' alt='girl-icon')
+                           .achievement__data
+                              h3 China
+                              h6 Origin
+      // end of hero section
+      // search section
+      section.search.section
+         .search__container.container
+            .search__content
+               li.search__item
+                  h4 Location
+                  .search__arrow
+                     h6 Norway
+                     i.fa-solid.fa-angle-down
+               li.search__item
+                  h4 Religion
+                  .search__arrow
+                     h6 Asatro
+                     i.fa-solid.fa-angle-down
+               li.search__item
+                  h4 Year
+                  .search__arrow
+                     h6 793 AD
+                     i.fa-solid.fa-angle-down
+               li.search__item
+                  h4 Type
+                  .search__arrow
+                     h6 Weapons
+                     i.fa-solid.fa-angle-down
+               .search__button
+                  i.fa-solid.fa-magnifying-glass
+                  h5 search
+      // end of search section
+      // slider section
+      section.slider.section
+         .slider__container.container
+            .slider__content
+               .slider__top
+                  .slider__top-left
+                     h1.slide__title Recently Added
+                     p.slide__para                       
+                     | Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.
+                  .slider__top-right
+                     .left__arrow
+                        i.fa-solid.fa-arrow-left
+                     .right__arrow
+                        i.fa-solid.fa-arrow-right
+               .slider__bottom
+                  .slider__content
+                     .slider__card
+                        img(src='../assets/images/syth.png' alt='syth')
+                        .slider__title
+                           h3 Yet bed any for travelling 
+                           .slider__subtitle
+                              h6 Year 1192 
+                              h6 Weapons
+                        .slider__price
+                           h3 $895.50 
+                           h5 View Details 
+                        .slider__bits
+                           h6 14 bids so far 
+                           p bidding Colses in 12 Days
+                     .slider__card
+                        img(src='../assets/images/bullacart.png' alt='bullacart')
+                        .slider__title
+                           h3 Indulgence unpleasing
+                           .slider__subtitle
+                              h6 Year 1012 
+                              h6 Tools
+                        .slider__price
+                           h3 $769.99
+                           h5 View Details  
+                        .slider__bits
+                           h6 32 bids so far 
+                           p bidding Colses in 12 Days
+                     .slider__card
+                        img(src='../assets/images/horn.png' alt='horn')
+                        .slider__title
+                           h3 Assistance
+                           .slider__subtitle
+                              h6 Year 950 
+                              h6 tools
+                        .slider__price
+                           h3 $939.80 
+                           h5 View Deatails 
+                        .slider__bits
+                           h6 154 bids so far 
+                           p bidding Colses in 12 Days
+                     .slider__card
+                        img(src='../assets/images/bullacart.png' alt='bullacart')
+                        .slider__title
+                           h3 Indulgence unpleasing
+                           .slider__subtitle
+                              h6 Year 1012 
+                              h6 Tools
+                        .slider__price
+                           h3 $769.99
+                           h5 View Details  
+                        .slider__bits
+                           h6 32 bids so far 
+                           p bidding Colses in 12 Days      
+      // end of slider section
+      // section gallery
+      section.gallery.section
+         .gallery__container.container
+            .gallery__content
+               .gallery__top 
+                  .gallery__top-left 
+                     h1 Top Categories
+                     p Party we years to order allow asked of, We os openion friends message as delight 
+                  .gallery__top-right 
+                     .left__arrow
+                        i.fa-solid.fa-arrow-left
+                     .right__arrow
+                        i.fa-solid.fa-arrow-right
+               .gallery__grid
+                  .grid__1.grid
+                     img(src='../assets/images/resized/lense.webp' alt='lense')
+                     h4 Lenses
+                  .grid__2.grid
+                     img(src='../assets/images/resized/books.webp' alt='books')
+                     h4 Books
+                  .grid__3.grid
+                     img(src='../assets/images/resized/neckless.webp' alt='neckless')
+                     h4 Ornaments
+                  .grid__4.grid
+                     img(src='../assets/images/resized/compass.jpg' alt='compass')
+                     h4 Compass
+                  .grid__5.grid
+                     img(src='../assets/images/resized/phone.jpg' alt='phone')
+                     h4 Phone
+                  .grid__6.grid
+                     img(src='../assets/images/resized/chair.webp' alt='chair')
+                     h4 Chair
+      // end of gallery
+      // feedback section
+      section.feedback.section
+         .feedback__container.container
+            .feedback__content
+               .girl__statue 
+                  img(src="../assets/images/girl-statue-2.png" alt="girl-statue")
+               .buyer__feedback 
+                  h3 Buyer's Feedback
+                  p Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous.
+      // end of feedback section
+      section.newsletter.section 
+         .newsletter__container.container 
+            .newsletter__content 
+               .news__left
+                  .news__title 
+                     h3 Subscribe our newsletter
+                     p Recieve latest news update and many things every week.
+                  .news__input 
+                     input(type="text" placeholder="Enter Your email address")
+                     <i class="fa-brands fa-telegram"></i>
+               .news__right
+                  .news__phone
+                     img(src="../assets/images/old-phone.png" alt="old-phone")
+      // end  of feedback sections
+footer 
+   .footer__container.container 
+      .footer__content 
+         .footer__resources
+            h4 Resources
+            ul
+               li Download 
+               li Help Center
+               li Guide Book 
+               li App Directory 
+         .footer__Seboria
+            h4 Seboria
+            ul
+               li Why Seboria
+               li Our Collection Process 
+               li Customer Stories 
+               li Instagram Post
+         .footer__company
+            h4 Company 
+            ul
+               li Antique 
+               li About Seboria
+               li Success
+               li Information
+         .footer__intouch 
+            h4 Get in Touch
+            p Feel free to get in touch with us via email 
+            span msoffl0404@gmail.com

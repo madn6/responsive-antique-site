@@ -1,0 +1,82 @@
+@use "../partials/" as p;
+
+main {
+	.hero__container {
+		margin-top: 2rem;
+	}
+	.hero__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.hero__image {
+			.hero__jar {
+				width: 320px;
+				aspect-ratio: 1/1;
+			}
+		}
+
+		.hero__left {
+			.hero__title {
+				font-weight: p.$weight-bold;
+				margin-bottom: 1rem;
+
+				span {
+					color: p.$blue;
+				}
+			}
+
+			.hero__para {
+				color: p.$grey;
+				margin-bottom: 1rem;
+				letter-spacing: normal;
+				text-align: left;
+				max-width: 450px;
+			}
+
+			.hero__buttons {
+				display: flex;
+				align-items: center;
+				.hero__button {
+					font-size: 14px;
+					height: 40px;
+					box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+						rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+					margin-right: 1rem;
+				}
+				img {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.hero__right {
+			.achievements__list {
+				li {
+					display: flex;
+					align-items: center;
+					margin-bottom: 1rem;
+					.achievement__data {
+						h3 {
+							font-family: p.$ff-poppins;
+							color: p.$oceanBlue;
+							font-weight: p.$weight-bold;
+							margin-bottom: 4px;
+						}
+						h6 {
+							color: p.$grey;
+						}
+					}
+				}
+
+				img {
+					padding: 6px;
+					box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+					width: 36px;
+					aspect-ratio: 1/1;
+					margin-right: 1rem;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}
